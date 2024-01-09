@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="30" y="30" width="168" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>This standard macro was created to filter out rows and columns not belonging to the chosen group.
+
+Author: Szymon Czuszek
+
+Date: 11/28/2022 - 11/28/2023</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor r="0" g="0" b="85" />
+          <FillColor r="215" g="218" b="253" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="221" y="317" width="437" height="192" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Additional testing: Filtering rows and fields.</Caption>
+          <Style TextColor="#ff0000" FillColor="#ffb0b0" BorderColor="#ff0000" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
+            <Position x="402" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Formula</Mode>
+              <Expression>[Description] == "A"</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Select only the chosen group fields.</AnnotationText>
+              <DefaultAnnotationText>Select only the chosen group fields.</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicSelect" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="246" y="377" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>__Group__</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2023-11-28 09:04:33</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>A</Operand>
+                  <StartDate>2023-11-28 09:04:33</StartDate>
+                  <EndDate>2023-11-28 09:04:33</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Select only the chosen group records.</AnnotationText>
+              <DefaultAnnotationText>[__Group__] = "A"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="Field3" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="__Group__" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Field4" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Field5" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Field1" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Field2" size="2147483647" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="Field3" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="__Group__" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Field4" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Field5" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Field1" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Field2" size="2147483647" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="558" y="378" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>Remove</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="*Unknown" />
+              </Fields>
+              <Expression />
+              <RemovePrefixSuffix>
+                <Type>Prefix</Type>
+                <Text>A_</Text>
+                <OnError>Warn</OnError>
+              </RemovePrefixSuffix>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Remove the group name prefix.</AnnotationText>
+              <DefaultAnnotationText>Remove the group name prefix.</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="705" y="329" width="152" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Output</Caption>
+          <Style TextColor="#7d00c8" FillColor="#e8e0fc" BorderColor="#7d00c8" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+            <Position x="730" y="378" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Name>Output</Name>
+              <Abbrev />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Output</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="36" y="329" width="142" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Input</Caption>
+          <Style TextColor="#155a0a" FillColor="#b8f2b7" BorderColor="#155a0a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+            <Position x="94" y="378" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UseFileInput value="False" />
+              <Name>Input</Name>
+              <Abbrev />
+              <ShowFieldMap value="False" />
+              <Optional value="False" />
+              <TextInput>
+                <Configuration>
+                  <NumRows value="5" />
+                  <Fields>
+                    <Field name="Field3" />
+                    <Field name="__Group__" />
+                    <Field name="Field4" />
+                    <Field name="Field5" />
+                    <Field name="Field1" />
+                    <Field name="Field2" />
+                  </Fields>
+                  <Data>
+                    <r>
+                      <c>C</c>
+                      <c>C</c>
+                      <c />
+                      <c />
+                      <c />
+                      <c />
+                    </r>
+                    <r>
+                      <c />
+                      <c>D</c>
+                      <c>D</c>
+                      <c />
+                      <c />
+                      <c />
+                    </r>
+                    <r>
+                      <c />
+                      <c>E</c>
+                      <c />
+                      <c>E</c>
+                      <c />
+                      <c />
+                    </r>
+                    <r>
+                      <c />
+                      <c>A</c>
+                      <c />
+                      <c />
+                      <c>A</c>
+                      <c />
+                    </r>
+                    <r>
+                      <c />
+                      <c>B</c>
+                      <c />
+                      <c />
+                      <c />
+                      <c>B</c>
+                    </r>
+                  </Data>
+                </Configuration>
+              </TextInput>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Input</DefaultAnnotationText>
+              <Left value="True" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field3" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="__Group__" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Field4" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Field5" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Field1" size="2147483647" source="TextInput:" type="V_String" />
+                <Field name="Field2" size="2147483647" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="233" y="29" width="498" height="241" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Interface - Output Group</Caption>
+          <Style TextColor="#000000" FillColor="#ffffff" BorderColor="#000000" Transparency="80" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+            <Position x="402" y="78" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Drop Down (16)</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="414" y="185" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="258" y="186" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="570" y="185" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="9" Connection="Targets" />
+    </Connection>
+    <Connection name="Update Group">
+      <Origin ToolID="10" Connection="Action" />
+      <Destination ToolID="9" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="True" />
+      <Destination ToolID="1" Connection="Input" />
+    </Connection>
+    <Connection name="Update Group">
+      <Origin ToolID="7" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection name="Update Group">
+      <Origin ToolID="8" Connection="Action" />
+      <Destination ToolID="2" Connection="Action" />
+    </Connection>
+    <Connection name="Drop Down Result">
+      <Origin ToolID="6" Connection="Question" />
+      <Destination ToolID="7" Connection="Question" />
+    </Connection>
+    <Connection name="Drop Down Result">
+      <Origin ToolID="6" Connection="Question" />
+      <Destination ToolID="8" Connection="Question" />
+    </Connection>
+    <Connection name="Drop Down Result">
+      <Origin ToolID="6" Connection="Question" />
+      <Destination ToolID="10" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (3)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (5)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Drop Down (6)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Output Group</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="cafdddae-1b40-44f7-9a46-d1b5b6100d06" />
+      <Telemetry>
+        <PreviousWorkflowId value="961ac58c-a8f6-4fe2-adc9-4df21d963e4d" />
+        <OriginWorkflowId value="083ab7e5-9b2d-402a-971a-c58ef8e19554" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="7" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>A</ReplaceText>
+              <Destination>1/Expression</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="8" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>A</ReplaceText>
+              <Destination>2/Simple/Operands/Operand</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="10" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>A</ReplaceText>
+              <Destination>9/RemovePrefixSuffix/Text</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (4)</Name>
+          <ToolId value="4" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (3)</Name>
+              <ToolId value="3" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (5)</Name>
+              <ToolId value="5" />
+            </Question>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Output Group</Description>
+              <Name>Drop Down (6)</Name>
+              <ToolId value="6" />
+              <Multiple value="False" />
+              <Default />
+              <Mode>Manual</Mode>
+              <Manual_Values><![CDATA[A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z
+]]></Manual_Values>
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="35" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="5" Selected="True" />
+        <Tool ToolId="3" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
