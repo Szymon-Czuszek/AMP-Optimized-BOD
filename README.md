@@ -6,7 +6,7 @@
 ### Input Group (Standard Macro)
 
 **Description:**
-Input Group is an Alteryx Standard Macro designed to assign a selected group, modifying both the data and metadata within the stream.
+- Input Group is an Alteryx Standard Macro designed to assign a selected group, modifying both the data and metadata within the stream.
 
 ### Output Group (Standard Macro)
 
