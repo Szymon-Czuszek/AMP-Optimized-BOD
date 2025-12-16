@@ -22,8 +22,7 @@
 
 ## Contributions and Collaboration
 - Contributions, suggestions, and enhancements from the community are welcome! Let's collaborate to further refine and expand the capabilities of these macros for optimized Alteryx workflows.
-
-Feel free to explore, experiment, and contribute to the AMP-Optimized-BOD repository to enhance Alteryx workflows with AMP optimization.
+- Feel free to explore, experiment, and contribute to the AMP-Optimized-BOD repository to enhance Alteryx workflows with AMP optimization.
 
 ---
 
