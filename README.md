@@ -3,7 +3,7 @@
 
 ## Included Macros
 - Input Group
-
+- Output Group
 
 ### Input Group (Standard Macro)
 
