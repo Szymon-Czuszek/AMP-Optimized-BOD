@@ -10,7 +10,7 @@
 **📝 Description:**
 - Input Group is an Alteryx Standard Macro designed to assign a selected group, modifying both the data and metadata within the stream.
 
-### Output Group (Standard Macro)
+### 📤 Output Group (Standard Macro)
 
 **Description:**
 - Output Group, another Alteryx Standard Macro, functions by filtering in a chosen group from a data stream that contains multiple different groups.
