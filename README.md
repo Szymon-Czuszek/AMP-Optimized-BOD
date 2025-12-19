@@ -22,7 +22,7 @@
 ## 🚀 Getting Started
 - Explore the macros provided in this repository to harness the power of AMP optimization in Alteryx workflows. Utilize the Input Group and Output Group macros to efficiently assign, filter, and control data streams, enhancing the speed and order of data processing operations.
 
-## Contributions and Collaboration
+## 🤝 Contributions and Collaboration
 - Contributions, suggestions, and enhancements from the community are welcome! Let's collaborate to further refine and expand the capabilities of these macros for optimized Alteryx workflows.
 - Feel free to explore, experiment, and contribute to the AMP-Optimized-BOD repository to enhance Alteryx workflows with AMP optimization.
 
