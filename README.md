@@ -19,7 +19,7 @@
 
 ## 🔀 Workflow Synergy
 - The synergy between these macros is instrumental.
-- By using the Input Group to designate groups and employing operations like union and classic Block Until Done (BOD), the workflow ensures the proper order of operations.
+- 🔗 By using the Input Group to designate groups and employing operations like union and classic Block Until Done (BOD), the workflow ensures the proper order of operations.
 - When creating multiple groups with the Input Group and segmenting the data stream with BOD, the Output Group becomes pivotal.
 - It filters the data stream, allowing precise control over the output order, even amidst multiple disparate data streams.
 
