@@ -18,7 +18,7 @@
 - 📌 The Input Group assigns a group, facilitating data modification, and metadata alteration. Subsequently, the Output Group filters the chosen group, enabling efficient control over data streams containing multiple groups.
 
 ## 🔀 Workflow Synergy
-- The synergy between these macros is instrumental.
+- 🧹 The synergy between these macros is instrumental.
 - 🔗 By using the Input Group to designate groups and employing operations like union and classic Block Until Done (BOD), the workflow ensures the proper order of operations.
 - When creating multiple groups with the Input Group and segmenting the data stream with BOD, the Output Group becomes pivotal.
 - It filters the data stream, allowing precise control over the output order, even amidst multiple disparate data streams.
