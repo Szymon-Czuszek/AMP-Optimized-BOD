@@ -4,8 +4,7 @@
 - Welcome to the AMP-Optimized-BOD repository! This collection of Alteryx macros is designed to optimize and streamline workflows by leveraging the AMP (Alteryx Multi-Processing) engine while targeting Block Until Done (BOD) processes.
 
 ## 🧰 Included Macros
-
-📥 Input Group
+- 📥 Input Group
 
 📤 Output Group
 
