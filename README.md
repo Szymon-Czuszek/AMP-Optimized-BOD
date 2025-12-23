@@ -7,7 +7,7 @@
 - 📥 Input Group
 - 📤 Output Group
 
-📥 Input Group (Standard Macro)
+### 📥 Input Group (Standard Macro)
 
 📝 Description:
 
