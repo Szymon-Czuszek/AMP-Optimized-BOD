@@ -14,7 +14,7 @@ d# ⚡ AMP-Optimized-BOD
 
 ### 📤 Output Group (Standard Macro)
 
-📝 Description:
+#### 📝 Description:
 
 Output Group is an Alteryx Standard Macro that filters a selected group from a data stream containing multiple groups.
 
