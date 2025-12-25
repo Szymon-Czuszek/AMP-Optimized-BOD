@@ -19,8 +19,7 @@
 
 **Together, these macros complement each other in workflow design:**
 - 📌 Input Group assigns and labels groups (data + metadata).
-
-🎯 Output Group filters the chosen group, enabling controlled data flow across complex streams.
+- 🎯 Output Group filters the chosen group, enabling controlled data flow across complex streams.
 
 🔀 Workflow Synergy
 
