@@ -1,4 +1,4 @@
-d# ⚡ AMP-Optimized-BOD
+# ⚡ AMP-Optimized-BOD
 
 ## 🤝 Welcome
 - Welcome to the AMP-Optimized-BOD repository! This collection of Alteryx macros is designed to optimize and streamline workflows by leveraging the AMP (Alteryx Multi-Processing) engine while targeting Block Until Done (BOD) processes.
@@ -15,8 +15,7 @@ d# ⚡ AMP-Optimized-BOD
 ### 📤 Output Group (Standard Macro)
 
 #### 📝 Description:
-
-Output Group is an Alteryx Standard Macro that filters a selected group from a data stream containing multiple groups.
+- Output Group is an Alteryx Standard Macro that filters a selected group from a data stream containing multiple groups.
 
 Together, these macros complement each other in workflow design:
 
