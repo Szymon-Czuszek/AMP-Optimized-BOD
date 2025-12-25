@@ -18,8 +18,7 @@
 - Output Group is an Alteryx Standard Macro that filters a selected group from a data stream containing multiple groups.
 
 **Together, these macros complement each other in workflow design:**
-
-📌 Input Group assigns and labels groups (data + metadata).
+- 📌 Input Group assigns and labels groups (data + metadata).
 
 🎯 Output Group filters the chosen group, enabling controlled data flow across complex streams.
 
