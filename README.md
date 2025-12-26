@@ -24,8 +24,7 @@
 ### 🔀 Workflow Synergy
 - The synergy between these macros is key to effective workflow orchestration.
 - By using:
-
-🏷️ Input Group to designate groups,
+1. 🏷️ Input Group to designate groups,
 
 🔗 operations such as Union and classic Block Until Done (BOD),
 
