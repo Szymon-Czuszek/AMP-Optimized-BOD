@@ -22,8 +22,7 @@
 - 🎯 Output Group filters the chosen group, enabling controlled data flow across complex streams.
 
 ### 🔀 Workflow Synergy
-
-The synergy between these macros is key to effective workflow orchestration.
+- The synergy between these macros is key to effective workflow orchestration.
 
 By using:
 
