@@ -23,8 +23,7 @@
 
 ### 🔀 Workflow Synergy
 - The synergy between these macros is key to effective workflow orchestration.
-
-By using:
+- By using:
 
 🏷️ Input Group to designate groups,
 
