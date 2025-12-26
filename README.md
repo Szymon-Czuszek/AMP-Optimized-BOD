@@ -21,7 +21,7 @@
 - 📌 Input Group assigns and labels groups (data + metadata).
 - 🎯 Output Group filters the chosen group, enabling controlled data flow across complex streams.
 
-🔀 Workflow Synergy
+### 🔀 Workflow Synergy
 
 The synergy between these macros is key to effective workflow orchestration.
 
