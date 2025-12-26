@@ -25,8 +25,7 @@
 - The synergy between these macros is key to effective workflow orchestration.
 - By using:
 1. 🏷️ Input Group to designate groups,
-
-🔗 operations such as Union and classic Block Until Done (BOD),
+2. 🔗 operations such as Union and classic Block Until Done (BOD),
 
 The workflow ensures the correct execution order.
 
