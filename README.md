@@ -34,8 +34,7 @@
 ## 🚀 Getting Started
 - Explore the macros in this repository to harness the power of AMP optimization in Alteryx workflows.
 - Use Input Group and Output Group to:
-
-🏷️ Assign groups
+1. 🏷️ Assign groups
 
 🔍 Filter data streams
 
