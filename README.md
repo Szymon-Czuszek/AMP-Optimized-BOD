@@ -36,8 +36,7 @@
 - Use Input Group and Output Group to:
 1. 🏷️ Assign groups
 2. 🔍 Filter data streams
-
-⚙️ Control execution order
+3. ⚙️ Control execution order
 
 Resulting in faster, cleaner, and more predictable workflows.
 
