@@ -41,8 +41,7 @@
 Resulting in faster, cleaner, and more predictable workflows.
 
 ## 🤝 Contributions and Collaboration
-
-Contributions, suggestions, and enhancements from the community are welcome!
+- Contributions, suggestions, and enhancements from the community are welcome!
 
 💡 Let’s collaborate to expand and refine these macros for optimized AMP-based Alteryx workflows.
 
