@@ -40,7 +40,7 @@
 
 Resulting in faster, cleaner, and more predictable workflows.
 
-🤝 Contributions and Collaboration
+## 🤝 Contributions and Collaboration
 
 Contributions, suggestions, and enhancements from the community are welcome!
 
