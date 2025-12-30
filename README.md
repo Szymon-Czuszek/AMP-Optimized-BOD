@@ -44,5 +44,5 @@
 - 💡 Let’s collaborate to expand and refine these macros for optimized AMP-based Alteryx workflows.
 - Feel free to explore, experiment, and contribute to improve the repository.
 
-ℹ️ Note:
-This README provides a high-level overview. Refer to individual macro documentation for detailed usage instructions.
+**ℹ️ Note:
+This README provides a high-level overview. Refer to individual macro documentation for detailed usage instructions.**
