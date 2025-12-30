@@ -37,8 +37,7 @@
 1. 🏷️ Assign groups
 2. 🔍 Filter data streams
 3. ⚙️ Control execution order
-
-Resulting in faster, cleaner, and more predictable workflows.
+- Resulting in faster, cleaner, and more predictable workflows.
 
 ## 🤝 Contributions and Collaboration
 - Contributions, suggestions, and enhancements from the community are welcome!
