@@ -29,7 +29,7 @@
 - The workflow ensures the correct execution order.
 - When multiple groups are created and segmented using BOD, the Output Group becomes essential:
 1. 🧹 Filtering specific data streams
-🧭 Maintaining precise output sequencing—even with parallel AMP processing
+2. 🧭 Maintaining precise output sequencing—even with parallel AMP processing
 
 ## 🚀 Getting Started
 - Explore the macros in this repository to harness the power of AMP optimization in Alteryx workflows.
